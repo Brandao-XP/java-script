@@ -11,22 +11,31 @@
             color: white;
             font: normal 18pt arial;
         }
+        p{
+            background-color: black;
+        }
+        td:nth-child(3n+0){
+            background-color: orange;
+        }
     </style>
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
+
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> com JavaScript</p>
+    <p id="pag">Mude essa frase com DOM</p>
     <div id="msg">clique em mim</div>
     <script>
         var corpo = window.document.body
-        var p = window.document.getElementsByTagName('p')[0]
+        var p = window.document.getElementById("body#pag")
         /*var d = window.document.getElementById('msg')
         d.style.background = 'green'
         d.innerText = 'Estou aguardando...'
-        */
+        
        var d = document.querySelector('div#msg')
-       d.style.background = ('blue')
+       d.style.background = ('blue')*/
+        
     </script>
 </body>
 </html>
